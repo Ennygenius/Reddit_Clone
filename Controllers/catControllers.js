@@ -1,11 +1,16 @@
 const mongoose = require("mongoose")
+//import category schema
 const Category = require("../Models/catModels")
 
 const getAllCategories = async (req, res) =>{
     try {
+        //(find) look for all the data in the database and spit it out
         const category = await Category.find({})
         res.json({category})
-    } catch (error) {
+    } 
+    //if there is an error
+    catch (error) {
+
         console.log(error);
     }
 }

@@ -4,7 +4,7 @@ const postRouter =  require("./Router/postRouter")
 const catRouter =  require("./Router/catRouter")
 const commentRouter =  require("./Router/commentRouter")
 const userRouter =  require("./Router/userRouter")
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const connectDb = require("./Config/db")
 const cors = require("cors")
 
